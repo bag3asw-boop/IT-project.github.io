@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-        <link id="theme-style" rel="stylesheet" href="light.css">
+        <link id="theme-style" rel="stylesheet" href="style.css">
 
     <title>Document</title>
 </head>
@@ -31,7 +31,7 @@
                 <div class="ri">
               <a href=""><img src="cart-svgrepo-com (2).svg" alt=""></a>
               <a href=""> <img src="search-svgrepo-com.svg" alt=""></a>
-              <a href=""><img src="profile-1341-svgrepo-com.svg" alt=""></a>
+              <a href="sign-in.html" aria-label="Profile"><img src="profile-1341-svgrepo-com.svg" alt=""></a>
                 </div>
         </div>
     </header>
@@ -60,7 +60,7 @@ function setTheme(theme) {
     let cssFile = document.getElementById("theme-style");
 
     if (theme === "light") {
-        cssFile.href = "light.css";
+        cssFile.href = "style.css";
     } else {
         cssFile.href = "dark.css";
     }
@@ -74,7 +74,7 @@ window.onload = function () {
     let savedTheme = localStorage.getItem("theme");
 
     if (savedTheme) {
-        document.getElementById("theme-style").href = savedTheme + ".css";
+        document.getElementById("theme-style").href = savedTheme === "dark" ? "dark.css" : "style.css";
     }
 }
 </script>
