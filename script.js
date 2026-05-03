@@ -58,7 +58,7 @@ function showPopup(message, redirectTo = "") {
 }
 
 function handleSignUp() {
-    const form = document.querySelector(".auth-form");
+    const form = document.querySelector(".account-form");
 
     if (!form || !document.getElementById("full-name")) {
         return;
@@ -93,7 +93,7 @@ function handleSignUp() {
 }
 
 function handleSignIn() {
-    const form = document.querySelector(".auth-form");
+    const form = document.querySelector(".account-form");
 
     if (!form || !document.getElementById("login-email")) {
         return;
